@@ -36,3 +36,32 @@ func main() {
 		ch = PrimeFilter(ch, prime)
 	}
 }
+
+
+/**
+* 基于select 实现管道的超时判断
+*
+*/
+
+/*
+select {
+case v := <-in:
+	fmt.Println(v)
+case <-time.After(time.Second):
+	return //超时
+}
+*/
+
+/**
+* 基于select 实现管道的超时判断
+*
+*/
+
+/*
+select {
+case v := <-in:
+	fmt.Println(v)
+default:
+	// 没有数据
+}
+*/
